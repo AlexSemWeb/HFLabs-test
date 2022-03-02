@@ -33,7 +33,7 @@ class customSearchInput extends HTMLElement {
       .querySelector(".input")
       .setAttribute("placeholder", this.getAttribute("placeholder"));
 
-    this.options = this.shadowRoot.querySelector("#options");
+    this.options = this.shadowRoot.querySelector("#options select");
     this.input = this.shadowRoot.querySelector("input");
     this.info = this.shadowRoot.querySelector(".input-info");
 
