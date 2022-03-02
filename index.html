@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HFLabs-test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <template id="customSearchInputTemplate">
+      <link rel="stylesheet" href="./style.css" />
+      <div class="input--container">
+        <label class="input-label bold"></label>
+        <input list="options" type="text" class="input" />
+        <datalist id="options"> </datalist>
+        <span class="input-info"></span>
+      </div>
+    </template>
+
+    <template id="customInputTemplate">
+      <link rel="stylesheet" href="./style.css" />
+      <div class="input--container">
+        <label class="input-label"></label>
+        <input type="text" class="input" />
+      </div>
+    </template>
+
+    <custom-search
+      id="name"
+      label="Компания или ИП"
+      placeholder="Введите название, ИНН, ОГРН или адрес организации"
+    ></custom-search>
+
+    <custom-input id="short-name" label="Краткое наименование"></custom-input>
+    <custom-input id="full-name" label="Полное наименование"></custom-input>
+    <custom-input id="inn" label="ИНН / КПП"></custom-input>
+    <custom-input id="address" label="Адрес"></custom-input>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
